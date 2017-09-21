@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<title>Cadastro</title>
+<link rel="stylesheet" type="text/css" href="estilo.css"/> 
+
+</head>
+    <body>
+             <fieldset class="fieldset2">
+                    <legend>Dados pessoais</legend>
+                <form method="POST">
+                    <label for="Nome"/></label><br />Nome: <input type="text" required="required" name="Nome" id="Nome" placeholder="Digite aqui seu nome"/><br />
+                    <label for="Email"/></label><br />E-mail: <input type="email" required="required" name="Email" id="Email" placeholder="Digite aqui seu e-mail"/><br />
+                    <label for="Data"/></label><br />Data de Nascimento: <input type="date" required="required" name="Data" id="Data" placeholder="Digite aqui sua data de nascimento"/><br />
+                    <label for="RA"/></label><br />RA: <input type="text" required="required" name="RA" id="RA" placeholder="Digite aqui seu RA"/><br />
+                    <label for="Telefone"/></label><br />Telefone: <input type="tel" required="required" maxlength="10" name="Telefone" id="Telefone" placeholder="Digite aqui seu telefone"/><br />
+                    <label for="Curso"/></label><br />Curso: <input type="text" required="required" name="Curso" id="Curso" placeholder="Digite aqui seu curso"/><br />
+                    <br />
+                    Sexo:<br />
+                    <input type="checkbox" name="F"/>Feminino<br />
+                    <input type="checkbox" name="M"/>Masculino<br />
+                    <br />
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+                <br />
+                <fieldset class="field">
+                    <legend>Dados residenciais</legend>
+                    <br />
+                <label for="Estado">Estado</label>:<br />
+                <select name="Estado">
+                    <option value="">--SELECIONE--</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select><br />
+                <label for="Cidade"/></label><br />Cidade: <input type="text" required="required" name="Cidade" id="Cidade" placeholder="Digite aqui sua cidade"/><br />    
+                <label for="Bairro"/></label><br />Bairro: <input type="text" required="required" name="Bairro" id="Bairro" placeholder="Digite aqui seu bairro"/><br />    
+                <label for="Endereço"/></label><br />Endereço: <input type="text" required="required" name="Endereço" id="Endereço" placeholder="Digite aqui seu endereço"/><br />    
+                <label for="Numero"/></label><br />Número: <input type="number" required="required" name="Numero" id="Numero" placeholder="Digite aqui seu número"/><br />    
+                <br />
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+                </fieldset>
+            
+                </form>
+    </body>   
+
+
+</html>

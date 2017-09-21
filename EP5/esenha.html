@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <title>Formulario - esqueci minha senha </title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <script>
+
+        function validaForm(){
+
+           var s1 = document.getElementById("Nsenha").value;
+           var s2 = document.getElementById("Cnsenha").value;
+           var e1 = document.getElementById("email").value;
+           var res = e1.includes("@" && ".com")
+
+
+            if (s1 == s2 && s1 != "" && s2 != ""){
+
+                alert("As senhas estão corretas")
+
+            }else if(s1 != s2){
+
+                alert("As senhas não conferem")
+            }else{
+
+                if(s1 == "" && s2 == ""){
+
+                    alert("As senhas estão em branco!")
+
+                }
+
+            }
+
+
+
+            if(res){
+
+                alert("O email está correto")
+
+            }else{
+                alert("O email é inválido")
+            }
+
+        }
+           
+
+
+
+    </script> 
+</head>
+
+    <body>
+            <fieldset class="field">
+                    <form method="POST">
+                        <label for="email"/></label><br />E-mail: <input type="email" name="email" id="email" placeholder="Digite aqui seu e-mail"/><br />
+                        <label for="RA"/></label><br />RA: <input type="text" name="ra" id="RA" placeholder="Digite aqui seu RA"/><br />
+
+                        <label for="Nsenha"/></label><br />Nova Senha: <input type="password" name="Nsenha" id="Nsenha" placeholder="Digite aqui sua nova senha"/><br />
+                        <label for="Cnsenha"/></label><br />Confirmação de senha: <input type="password" name="Cnsenha" id="Cnsenha" placeholder="Confirme a senha"/><br />
+                        <br />
+                        <button type="submit" onClick="validaForm()">Enviar</button>
+                        <button type="reset">Limpar</button>
+                
+                
+                    </fieldset>
+                    </form>
+    </body>
+
+</html>

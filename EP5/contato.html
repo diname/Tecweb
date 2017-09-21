@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <title>Contato</title>
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css"/> 
+
+    <script>
+
+        function clicar(){
+            var cont = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+
+            alert("ola " + cont + " Seja bem vindo!");
+            alert("Seu email é " + email)
+            alert("Obrigado pelo comentario!")
+        }
+
+
+   </script>
+
+<head>
+   
+
+
+
+</head>
+<body>
+        <fieldset class="field">
+                <form method="POST">
+                    <label for="email"/></label><br />E-mail: <input type="email" name="email" id="email" placeholder="Digite aqui seu e-mail"/><br />
+                    <label for="Nome"/></label><br />Nome: <input type="text" id="nome" required="required" name="Nome" id="Nome" placeholder="Digite aqui seu nome"/><br />
+                    <br />
+                    Assunto:<br />
+                    <input type="checkbox" value="Elogios" name="E"/>Elogios<br />
+                    <input type="checkbox" value="Reclamação" name="R"/>Reclamação<br />
+                    <input type="checkbox" value="Sugestão" name="S"/>Sugestão<br />
+                    <input type="checkbox" value="Duvidas" name="D"/>Duvidas<br />
+                    <br />
+                    Mensagem: <br />
+                    <textarea placeholder="Coloque seu assunto aqui"></textarea>
+                    
+                    <br/>
+                    <br/>
+                    <button type="submit" onclick="clicar()">Enviar</button>
+                    <button type="reset">Limpar</button>
+            
+            
+                </fieldset>
+                </form>
+</body>
+
+
+</html>
